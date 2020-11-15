@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style media="screen">
+      .contain{
+        border:2px solid black;
+
+      }
+
+      .ItemContainer{
+        display:grid;
+        grid-template-columns:auto auto auto auto auto;
+        grid-column-gap: 2%;
+        grid-row-gap: 10%;
+      }
+    </style>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="index.js" async></script>
+    <title></title>
+  </head>
+  <body>
+
+<div id="searchItem">
+  <input type="text" name="" value="" id="search">
+  <button type="button" name="button">Search</button>
+</div>
+
+<div id="cart">
+  <a href="cart.html"><button type="button" name="button">Cart</button></a>
+</div>
+
+    <div id="filterContainer">
+        <button type="button" name="button">Grocery</button>
+        <button type="button" name="button">Home and Kitchen Utilities</button>
+        <button type="button" name="button">Electronics and Electrical Appliances</button>
+        <button type="button" name="button">Mobile and Mobile Accessories</button>
+        <button type="button" name="button">Books</button>
+    </div>
+<br><br>
+    <div class="ItemContainer">
+
+      <div class="contain">
+        <!-- Image of the item -->
+        <h4 class="itemName">Apples</h4>
+        <h4 class="itemCost">$5/kg</h4>
+        <button type="button" name="button" onclick="add(this)">Add to cart</button>
+      </div>
+
+      <div class="contain">
+        <!-- Image of the item -->
+        <h4 class="itemName">Bread</h4>
+        <h4 class="itemCost">$2</h4>
+        <button type="button" name="button" onclick="add(this)">Add to cart</button>
+
+      </div>
+
+      <div class="contain">
+        <!-- Image of the item -->
+        <h4 class="itemName">Oranges</h4>
+        <h4 class="itemCost">5$/kg</h4>
+        <button type="button" name="button" onclick="add(this)">Add to cart</button>
+
+      </div>
+
+      <div class="contain">
+        <!-- Image of the item -->
+        <h4 class="itemName">Potato Chips</h4>
+        <h4 class="itemCost">$2</h4>
+        <button type="button" name="button" onclick="add(this)">Add to cart</button>
+
+      </div>
+
+      <div class="contain">
+        <!-- Image of the item -->
+        <h4 class="itemName">Cookies</h4>
+        <h4 class="itemCost">$4</h4>
+        <button type="button" name="button" onclick="add(this)">Add to cart</button>
+
+      </div>
+
+
+      <div class="contain">
+        <!-- Image of the item -->
+        <h4 class="itemName">Toilet Paper</h4>
+        <h4 class="itemCost">$5/kg</h4>
+        <button type="button" name="button" onclick="add(this)">Add to cart</button>
+      </div>
+
+      <div class="contain">
+        <!-- Image of the item -->
+        <h4 class="itemName">Detergent</h4>
+        <h4 class="itemCost">$2</h4>
+        <button type="button" name="button" onclick="add(this)">Add to cart</button>
+
+      </div>
+
+      <div class="contain">
+        <!-- Image of the item -->
+        <h4 class="itemName">Tissues</h4>
+        <h4 class="itemCost">5$/kg</h4>
+        <button type="button" name="button" onclick="add(this)">Add to cart</button>
+
+      </div>
+
+      <div class="contain">
+        <!-- Image of the item -->
+        <h4 class="itemName">Toilet Cleaner</h4>
+        <h4 class="itemCost">$2</h4>
+        <button type="button" name="button" onclick="add(this)">Add to cart</button>
+
+      </div>
+
+      <div class="contain">
+        <!-- Image of the item -->
+        <h4 class="itemName">Toothbrush</h4>
+        <h4 class="itemCost">$4</h4>
+        <button type="button" name="button" onclick="add(this)">Add to cart</button>
+
+      </div>
+
+
+
+
+
+    </div>
+
+  </body>
+</html>
