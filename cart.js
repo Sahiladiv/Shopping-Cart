@@ -8,14 +8,12 @@ function add(){
 var q = 1;
 if(sessionStorage.length !=0){
 
-  for(i=items.length-1;i>=0;i--){
-  cartItem = items.pop();
-
+  for(i=0;i<sessionStorage.length;i++){
+      cartItem = items.pop();
       var cartBody = document.createElement("tbody");
       var itemClass = document.createAttribute("class");
       itemClass.value="newItem"
       cartBody.setAttributeNode(itemClass)
-
 
       var cartTemplate = document.createElement("tr");
       var cartColumn =  document.createElement("td");
@@ -64,13 +62,11 @@ if(sessionStorage.length !=0){
       deleteButton.appendChild(deleteNode);
       deleteRowColumn.appendChild(deleteButton);
 
-
       var costAmount = document.createTextNode(100);
       var costClass = document.createAttribute("class");
       costClass.value = "cost";
       costColumn.appendChild(costAmount);
       costColumn.setAttributeNode(costClass);
-
 
       cartTemplate.appendChild(cartColumn);
       cartTemplate.appendChild(quantityColumn);
@@ -84,36 +80,15 @@ if(sessionStorage.length !=0){
       select.appendChild(cartBody)
     }
 
-
-
-
-
+}
 
 }
 
-
-
-}
-// 
 function cancel(x){
-   var removeNode = x.parentNode.parentNode;
+  var removeNode = x.parentNode.parentNode;
+  var removeIndex = x.parentNode.parentNode.rowIndex;
+  console.log(removeIndex)
+  var removeItem = removeNode.childNodes[0].textContent;
   removeNode.remove();
-//
-// for(var i=0;i<sessionStorage.length;i++){
-//   if(removeNode.childNodes[0].textContent === sessionStorage.getItem(i)){
-//       sessionStorage.removeItem(i);
-//
-//   }
-// }
-// if(i==0){
-//   sessionStorage.clear();
-// }
-//
+  sessionStorage.removeItem(removeIndex)
 }
-// console.log(sessionStorage.length)
-
-
-
-
-
-// }
