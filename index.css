@@ -3,6 +3,13 @@
 
 }
 
+.myContain{
+  width:20%;
+  border: 2px solid black;
+  margin-top: 5%;
+  margin-left: 21%;
+}
+
 .ItemContainer{
   display:grid;
   grid-template-columns:auto auto auto auto auto;
@@ -39,4 +46,8 @@ margin-top: 2%;
 #filterContainer{
     /* border: 2px solid black; */
   margin-top: 5%;
+}
+
+.myBackButton{
+  margin-left: 7%;
 }
